@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="382dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_item_place"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499">
+
+        <TextView
+            android:id="@+id/textViewPlaceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnU"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/edittxt"
+            app:layout_constraintStart_toEndOf="@+id/edittxt"
+            app:layout_constraintTop_toTopOf="@+id/edittxt"
+            app:layout_constraintVertical_bias="0.428"
+            app:srcCompat="@drawable/group_5__1_" />
+
+        <ImageButton
+            android:id="@+id/btnD"
+            android:layout_width="56dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnU"
+            app:layout_constraintStart_toEndOf="@+id/btnU"
+            app:layout_constraintTop_toTopOf="@+id/btnU"
+            app:srcCompat="@drawable/group_4__1_" />
+
+        <EditText
+            android:id="@+id/edittxt"
+            android:layout_width="157dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="28dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewPlaceId"
+            app:layout_constraintStart_toEndOf="@+id/textViewPlaceId"
+            app:layout_constraintTop_toTopOf="@+id/textViewPlaceId"
+            app:layout_constraintVertical_bias="0.6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
